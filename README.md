@@ -4,15 +4,10 @@
 
 ---
 
-## 🌙 Project Page
-👉 [View the full project page here](https://clementinegrethen.github.io/publications/3D-Vast-ICCV2025.html)
-
----
-
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Paper-PDF-red?style=for-the-badge"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Code-GitHub-blue?style=for-the-badge&logo=github"></a>
-  <a href="#"><img src="#"><img src="https://img.shields.io/badge/Dataset-MoonStereo-green?style=for-the-badge"></a>
+  <a href="https://clementinegrethen.github.io/publications/3D-Vast-ICCV2025.html"><img src="https://img.shields.io/badge/Project%20Page-Online-blue?style=for-the-badge"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Dataset-StereoLunar-green?style=for-the-badge"></a>
 </p>
 
 ---
@@ -33,3 +28,11 @@ If you find this work useful, please cite:
   month={October},
   note={Accepted at 3D-VAST Workshop}
 }
+
+## Acknowledgements
+
+This work was supported by the **European Space Agency (ESA)** under contract  
+**4000140461/23/NL/GLC/my**.  
+
+We gratefully acknowledge the valuable support and collaboration of the  
+**European Space Agency (ESA)** and **Airbus Defence and Space**.
