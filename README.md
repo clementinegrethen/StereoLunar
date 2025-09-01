@@ -11,6 +11,57 @@
 </p>
 
 ---
+## 📂 Dataset Description
+
+Our dataset is provided in a format directly compatible with **DUSt3R/MASt3R training pipelines**.  
+For each image, we include three synchronized files:
+
+- **RGB image (`.jpg`)**  
+  - Resolution: **512 × 512** pixels  
+  - Standard 8-bit image for visualization and training.  
+  - All images are expressed in a **selenocentric (Moon-centered) coordinate system**.
+
+- **Depth map (`.exr`)**  
+  - High-precision floating-point depth map (in meters).  
+  - Encodes the distance from the camera to the visible surface for each pixel.  
+  - Can be used to generate ground-truth 3D point clouds.
+
+- **Camera metadata (`.npz`)**  
+  - Contains the intrinsic and extrinsic calibration matrices:  
+    - `intrinsics` (or `K`): 3×3 camera intrinsic matrix  
+    - `extri` or `Rt`: 3×4 camera pose matrix (world→camera, OpenCV convention)  
+    - Alternative fields (`fx`, `fy`, `cx`, `cy`) are also provided for compatibility.  
+  - This ensures reproducible reprojections and geometric consistency.
+
+---
+
+## 📁 Data Structure
+
+A typical folder looks like this:
+dataset_root/
+│
+├── im_00000.jpg
+├── im_00000.exr
+├── im_00000.npz
+│
+├── im_00001.jpg
+├── im_00001.exr
+├── im_00001.npz
+│
+└── ...
+
+Each triplet `{.jpg, .exr, .npz}` corresponds to a single camera frame.  
+
+---
+
+
+- In the repository, the folder **`DataGeneration/`** contains a **small example subset** of the dataset.  
+  This is meant for quick testing.
+
+- The dataset has been formatted to be **plug-and-play with DUSt3R/MASt3R**.  
+  We also provide (📌 *TODO*) a **custom dataloader** that loads images, depth maps, and camera parameters in one call.
+
+---
 
 ## 📄 Citation
 If you find this work useful, please cite:
