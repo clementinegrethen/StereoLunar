@@ -2,6 +2,10 @@
 **Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset**
 *Accepted at ICCV 2025 (3D-VAST Workshop)*
 
+<p align="center">
+  <img src="illustration3D_R.png" alt="3D Reconstruction Illustration" width="800"/>
+</p>
+
 ---
 
 <p align="center">
@@ -12,18 +16,49 @@
 
 ---
 
-## Installation
 
+1. Clone MOONSt3R.
 ```bash
-git clone <repo_url>
+git clone --recursive https://github.com/clementinegrethen/MOONSt3R.git
 cd MOONSt3R
-conda create -n moonst3r python=3.11
-conda activate moonst3r
-pip install -r data_generation/mast3r/requirements.txt
-pip install -r data_generation/mast3r/dust3r/requirements.txt
+cd mast3r
+
+# if you have already cloned mast3r:
+# git submodule update --init --recursive
+```
+2. Create the environment, here we show an example using conda.
+```bash
+conda create -n moonst3r python=3.11 cmake=3.14.0
+conda activate moonst3r 
+conda install pytorch torchvision pytorch-cuda=12.1 -c pytorch -c nvidia  # use the correct version of cuda for your system
+pip install -r requirements.txt
+pip install -r dust3r/requirements.txt
+# Optional: you can also install additional packages to:
+# - add support for HEIC images
+# - add required packages for visloc.py
+pip install -r dust3r/requirements_optional.txt
 ```
 
----
+3. compile and install ASMK
+```bash
+pip install cython
+
+git clone https://github.com/jenicek/asmk
+cd asmk/cython/
+cythonize *.pyx
+cd ..
+pip install .  # or python3 setup.py build_ext --inplace
+cd ..
+```
+
+4. Optional, compile the cuda kernels for RoPE (as in CroCo v2).
+```bash
+# DUST3R relies on RoPE positional embeddings for which you can compile some cuda kernels for faster runtime.
+cd dust3r/croco/models/curope/
+python setup.py build_ext --inplace
+cd ../../../../
+```
+
 
 ## Quick Start
 
@@ -43,6 +78,10 @@ A folder with sample scenes for quick testing will be provided: [`quick_testing/
 ---
 
 ## Dataset Description
+
+<p align="center">
+  <img src="stereolunar.png" alt="StereoLunar Dataset" width="600"/>
+</p>
 
 Our dataset is provided in a format directly compatible with **DUSt3R/MASt3R training pipelines**.  
 For each image, we include three synchronized files:
