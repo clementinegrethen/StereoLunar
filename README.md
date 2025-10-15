@@ -18,18 +18,18 @@ Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Sur
 
 ## 📋 Table of Contents
 
-- [🚀 News](#-news)
-- [📦 Installation](#-installation)
-- [📥 Checkpoints](#-checkpoints)
-- [🚀 Usage: Inference & Demo](#-usage-inference--demo)
+- [News](#-news)
+- [Installation](#-installation)
+- [Checkpoints](#-checkpoints)
+- [Usage: Inference & Demo](#-usage-inference--demo)
   - [Sample Data](#sample-data)
   - [Demo Scripts](#demo-scripts)
-  - [💡 Advanced Usage: Feature Matching](#-advanced-usage-feature-matching)
-- [🌙 Dataset Description](#dataset-description)
-- [📊 Data Structure](#data-structure)
-- [🔧 Finetuning Example](#-finetuning-example)
-- [📚 Citation](#-citation)
-- [🙏 Acknowledgements](#-acknowledgements)
+  - [Advanced Usage: Feature Matching](#-advanced-usage-feature-matching)
+- [Dataset Description](#dataset-description)
+- [Data Structure](#data-structure)
+- [Finetuning Example](#-finetuning-example)
+- [Citation](#-citation)
+- [Acknowledgements](#-acknowledgements)
 
 ---
 
