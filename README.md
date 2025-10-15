@@ -16,17 +16,30 @@
 
 ---
 
+## 🚀 News
+**Coming Soon:** New model for 3D Moon reconstruction based on Vision Transformer (ViT) and StereoLunar dataset!
 
-1. Clone MOONSt3R.
+---
+
+## 📦 Installation
+
+### Prerequisites
+- Python 3.11
+- CUDA-compatible GPU (recommended)
+- Git with submodule support
+
+### Step-by-step Installation
+
+**1. Clone the repository**
 ```bash
 git clone --recursive https://github.com/clementinegrethen/MOONSt3R.git
 cd MOONSt3R
-cd mast3r
 
-# if you have already cloned mast3r:
+# If you have already cloned without submodules:
 # git submodule update --init --recursive
 ```
-2. Create the environment, here we show an example using conda.
+
+**2. Create and activate the environment**
 ```bash
 conda create -n moonst3r python=3.11 cmake=3.14.0
 conda activate moonst3r 
@@ -39,19 +52,18 @@ pip install -r dust3r/requirements.txt
 pip install -r dust3r/requirements_optional.txt
 ```
 
-3. compile and install ASMK
+**3. Compile and install ASMK**
 ```bash
 pip install cython
-
 git clone https://github.com/jenicek/asmk
 cd asmk/cython/
 cythonize *.pyx
 cd ..
-pip install .  # or python3 setup.py build_ext --inplace
+pip install .
 cd ..
 ```
 
-4. Optional, compile the cuda kernels for RoPE (as in CroCo v2).
+**4. (Optional) Compile CUDA kernels for RoPE acceleration**
 ```bash
 # DUST3R relies on RoPE positional embeddings for which you can compile some cuda kernels for faster runtime.
 cd dust3r/croco/models/curope/
@@ -59,21 +71,46 @@ python setup.py build_ext --inplace
 cd ../../../../
 ```
 
+---
 
-## Quick Start
+## 🚀 Quick Start
 
+### Download Checkpoints
+
+There are two options for downloading our StereoLunar fine-tuned MASt3R model:
+
+**Option 1: Automatic download via Hugging Face Hub**
+The model ([MOONSt3R](https://huggingface.co/cgrethen/MOONSt3R)) will be downloaded automatically when you run the demo.
+
+**Option 2: Manual download**
+```bash
+# Install gdown if needed
+pip install gdown
+
+# Create checkpoints directory and download model
+mkdir -p checkpoints/
+gdown --fuzzy "https://drive.google.com/open?id=1wSGpYwWeGn99J8dVWNkfefwmWMAH7LFT" -O checkpoints/  # MOONSt3R.pth
+```
+
+### Inference/Demo
+
+**Run non-interactive demo:**
 ```python
-# Example loading for inference
-from mast3r.demo import load_model
-model = load_model('data_generation/mast3r/CHECKPOINTS/lunar_checkpoint.pth')
-# ...
+python demo_mast3r_nongradio.py --weights checkpoints/MOONSt3R.pth
+```
+
+**Run interactive demo:**
+```python
+python demo.py --weights checkpoints/MOONSt3R.pth
 ```
 
 ---
 
 
 
-## Dataset Description
+---
+
+## 🌙 Dataset Description
 
 <p align="center">
   <img src="assets/StereoLunar.png" alt="StereoLunar Dataset" width="600"/>
@@ -159,12 +196,14 @@ Images are loaded as 512x512 `.jpg` files. Each view is paired with:
 - a `.exr` file containing a depth map in metric scale
 
 ---
-## Quick Testing
+
+## 🧪 Quick Testing
 
 A folder with sample scenes for quick testing will be provided: [`quick_testing/`](quick_testing/) *(to be created)*
 
 ---
-## Finetuning Example
+
+## 🔧 Finetuning Example
 
 To finetune on your own lunar dataset:
 
