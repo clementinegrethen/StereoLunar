@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://openreview.net/forum?id=l5sGAza3El"><img src="https://img.shields.io/badge/Paper-PDF-red?style=for-the-badge"></a>
   <a href="https://clementinegrethen.github.io/publications/3D-Vast-ICCV2025.html"><img src="https://img.shields.io/badge/Project%20Page-Online-blue?style=for-the-badge"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Dataset-StereoLunar-green?style=for-the-badge"></a>
+  <a href="#"><img src="assets/illustration3DR"></a>
 </p>
 
 ---
@@ -80,7 +80,7 @@ A folder with sample scenes for quick testing will be provided: [`quick_testing/
 ## Dataset Description
 
 <p align="center">
-  <img src="stereolunar.png" alt="StereoLunar Dataset" width="600"/>
+  <img src="assets/stereolunar.png" alt="StereoLunar Dataset" width="600"/>
 </p>
 
 Our dataset is provided in a format directly compatible with **DUSt3R/MASt3R training pipelines**.  
