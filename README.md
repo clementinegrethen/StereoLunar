@@ -192,9 +192,9 @@ if __name__ == '__main__':
 
 **Example Result:**
 
-<!-- <p align="center">
+<p align="center">
   <img src="assets/image.png" alt="Feature Matching Example" width="800"/>
-
+</p>
 
 ---
 
