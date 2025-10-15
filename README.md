@@ -1,4 +1,4 @@
-# MOONSt3R
+# MOONSt3R ICCV 3D-VAST 2025 
 **Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset**
 *Accepted at ICCV 2025 (3D-VAST Workshop)*
 
