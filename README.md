@@ -201,7 +201,7 @@ if __name__ == '__main__':
 ## 🌙 Dataset Description
 
 <p align="center">
-  <img src="assets/StereoLunar.png" alt="StereoLunar Dataset" width="600"/>
+  <img src="assets/StereoLunar.png" alt="StereoLunar Dataset" width="400"/>
 </p>
 
 Our dataset is provided in a format directly compatible with **DUSt3R/MASt3R training pipelines**.  
