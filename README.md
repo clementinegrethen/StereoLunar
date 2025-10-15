@@ -193,7 +193,7 @@ if __name__ == '__main__':
 **Example Result:**
 
 <p align="center">
-  <img src="assets/image.png" alt="Feature Matching Example" width="800"/>
+  <img src="assets/image.png" alt="Feature Matching Example" width="500"/>
 </p>
 
 ---
@@ -201,7 +201,7 @@ if __name__ == '__main__':
 ## 🌙 Dataset Description
 
 <p align="center">
-  <img src="assets/StereoLunar.png" alt="StereoLunar Dataset" width="400"/>
+  <img src="assets/StereoLunar.png" alt="StereoLunar Dataset" width="600"/>
 </p>
 
 Our dataset is provided in a format directly compatible with **DUSt3R/MASt3R training pipelines**.  
