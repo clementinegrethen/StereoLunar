@@ -71,11 +71,7 @@ model = load_model('data_generation/mast3r/CHECKPOINTS/lunar_checkpoint.pth')
 
 ---
 
-## Quick Testing
 
-A folder with sample scenes for quick testing will be provided: [`quick_testing/`](quick_testing/) *(to be created)*
-
----
 
 ## Dataset Description
 
@@ -163,7 +159,11 @@ Images are loaded as 512x512 `.jpg` files. Each view is paired with:
 - a `.exr` file containing a depth map in metric scale
 
 ---
+## Quick Testing
 
+A folder with sample scenes for quick testing will be provided: [`quick_testing/`](quick_testing/) *(to be created)*
+
+---
 ## Finetuning Example
 
 To finetune on your own lunar dataset:
