@@ -1,5 +1,5 @@
 # MOONSt3R ICCV 3D-VAST 2025 
-**Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset**
+Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset**
 *Accepted at ICCV 2025 (3D-VAST Workshop)*
 
 <p align="center">
@@ -13,6 +13,23 @@
   <a href="https://clementinegrethen.github.io/publications/3D-Vast-ICCV2025.html"><img src="https://img.shields.io/badge/Project%20Page-Online-blue?style=for-the-badge"></a>
   <a href="#"><img src="https://img.shields.io/badge/Dataset-StereoLunar-green?style=for-the-badge"></a>
 </p>
+
+---
+
+## 📋 Table of Contents
+
+- [🚀 News](#-news)
+- [📦 Installation](#-installation)
+- [📥 Checkpoints](#-checkpoints)
+- [🚀 Usage: Inference & Demo](#-usage-inference--demo)
+  - [Sample Data](#sample-data)
+  - [Demo Scripts](#demo-scripts)
+  - [💡 Advanced Usage: Feature Matching](#-advanced-usage-feature-matching)
+- [🌙 Dataset Description](#dataset-description)
+- [📊 Data Structure](#data-structure)
+- [🔧 Finetuning Example](#-finetuning-example)
+- [📚 Citation](#-citation)
+- [🙏 Acknowledgements](#-acknowledgements)
 
 ---
 
@@ -94,7 +111,7 @@ gdown --fuzzy "https://drive.google.com/file/d/11PjhqADOOXfIkLk64ognltVN-gUHxLHA
 ##  Usage: Inference & Demo
 
 ### Sample Data
-A folder with sample scenes from our **StereoLunar dataset** (see [Dataset Description](#-dataset-description)) for quick testing is provided: [`quick_testing/`](quick_testing/) *. We provided 3 pairs for each type of trajectories: Nadir, Oblique and Dynamic.
+A folder with sample scenes from our **StereoLunar dataset** (see [🌙 Dataset Description](#dataset-description)) for quick testing is provided: [`quick_testing/`](quick_testing/) *. We provided 3 pairs for each type of trajectories: Nadir, Oblique and Dynamic.
 
 ### Demo Scripts
 
