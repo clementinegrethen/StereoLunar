@@ -1,4 +1,4 @@
-# MOONSt3R ICCV 3D-VAST 2025 
+# StereoLunar ICCV 3D-VAST 2025 
 Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset**
 *Accepted at ICCV 2025 (3D-VAST Workshop)*
 
@@ -49,8 +49,8 @@ Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Sur
 
 **1. Clone the repository**
 ```bash
-git clone --recursive https://github.com/clementinegrethen/MOONSt3R.git
-cd MOONSt3R
+git clone --recursive https://github.com/clementinegrethen/StereoLunar.git
+cd StereoLunar
 
 # If you have already cloned without submodules:
 # git submodule update --init --recursive
@@ -58,8 +58,8 @@ cd MOONSt3R
 
 **2. Create and activate the environment**
 ```bash
-conda create -n moonst3r python=3.11 cmake=3.14.0
-conda activate moonst3r 
+conda create -n StereoLunar python=3.11 cmake=3.14.0
+conda activate StereoLunar 
 conda install pytorch torchvision pytorch-cuda=12.1 -c pytorch -c nvidia  # use the correct version of cuda for your system
 pip install -r requirements.txt
 pip install -r dust3r/requirements.txt
@@ -96,7 +96,7 @@ cd ../../../../
 There are two options for downloading our StereoLunar fine-tuned MASt3R model:
 
 **Option 1: Automatic download via Hugging Face Hub**
-The model ([MOONSt3R](https://huggingface.co/cgrethen/MOONSt3R)) will be downloaded automatically when you run the demo.
+The model ([StereoLunar](https://huggingface.co/cgrethen/StereoLunar)) will be downloaded automatically when you run the demo.
 
 **Option 2: Manual download**
 ```bash
@@ -105,7 +105,7 @@ pip install gdown
 
 # Create checkpoints directory and download model
 mkdir -p checkpoints/
-gdown --fuzzy "https://drive.google.com/file/d/11PjhqADOOXfIkLk64ognltVN-gUHxLHA/view?usp=drive_link" -O checkpoints/  # MOONSt3R.pth
+gdown --fuzzy "https://drive.google.com/file/d/11PjhqADOOXfIkLk64ognltVN-gUHxLHA/view?usp=drive_link" -O checkpoints/  # StereoLunar.pth
 ```
 
 ##  Usage: Inference & Demo
@@ -117,17 +117,17 @@ A folder with sample scenes from our **StereoLunar dataset** (see [🌙 Dataset 
 
 **Run interactive demo:**
 ```python
-python demo.py --weights checkpoints/MOONSt3R.pth
+python demo.py --weights checkpoints/StereoLunar.pth
 ```
 
 **Run non-interactive demo:**
 ```python
-python demo_mast3r_nongradio.py --weights checkpoints/MOONSt3R.pth
+python demo_mast3r_nongradio.py --weights checkpoints/StereoLunar.pth
 ```
 ## Advanced Usage: 
 ### Feature Matching
 <details>
-<summary><strong>Click to expand:</strong> Code sample to compute matches with MOONSt3R for a pair of images</summary>
+<summary><strong>Click to expand:</strong> Code sample to compute matches with StereoLunar for a pair of images</summary>
 
 ```python
 from mast3r.model import AsymmetricMASt3R
@@ -139,7 +139,7 @@ from dust3r.utils.image import load_images
 
 if __name__ == '__main__':
     device = 'cuda'
-    model_name = "checkpoints/MOONSt3R.pth"  # Updated path
+    model_name = "checkpoints/StereoLunar.pth"  # Updated path
     # You can put the path to a local checkpoint in model_name if needed
     model = AsymmetricMASt3R.from_pretrained(model_name).to(device)
     
@@ -224,7 +224,7 @@ if __name__ == '__main__':
 ---
 ### Save PLY of the reconstructed scene
 <details>
-<summary><strong>Click to expand:</strong> Code sample to save 3D reconstruction scene with MOONSt3R for a pair of images</summary>
+<summary><strong>Click to expand:</strong> Code sample to save 3D reconstruction scene with StereoLunar for a pair of images</summary>
 
 ```python
 import open3d as o3d
@@ -340,7 +340,7 @@ dataset_root/
 Each triplet `{.jpg, .exr, .npz}` corresponds to a single camera frame.
 
 ---
-## Integration of StereoLunar with MOONSt3R:
+## Integration of StereoLunar with StereoLunar:
 The dataset has been formatted to be **plug-and-play with DUSt3R/MASt3R**. We also provide  a **custom dataloader** that loads images, depth maps, and camera parameters in one call.  [`mast3r/dust3r/dust3r/datasets/LunarDataset.py`](mast3r/dust3r/dust3r/datasets/LunarDataset.py)
 
 ---
@@ -404,7 +404,7 @@ If you find our work to be useful in your research, please consider citing our p
 
 
 ```bibtex
-@inproceedings{grethen2025moonst3r,
+@inproceedings{grethen2025StereoLunar,
   title={Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset},
   author={Grethen, Clémentine and Morin, Géraldine and Gasparini, Simone and Lebreton, Jérémy and Marti, Lucas and Gestido, Manuel Sanchez},
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)},
