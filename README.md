@@ -5,16 +5,22 @@ Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Sur
 <p align="center">
   <img src="assets/illustration3DR.png" alt="3D Reconstruction Illustration" width="800"/>
 </p>
-
 ---
 
 <p align="center">
-  <a href="[[https://openreview.net/forum?id=l5sGAza3El](https://openaccess.thecvf.com/content/ICCV2025W/3D-VAST/html/Grethen_Adapting_Stereo_Vision_From_Objects_To_3D_Lunar_Surface_Reconstruction_ICCVW_2025_paper.html)"><img src="https://img.shields.io/badge/Paper-PDF-red?style=for-the-badge](https://openaccess.thecvf.com/content/ICCV2025W/3D-VAST/html/Grethen_Adapting_Stereo_Vision_From_Objects_To_3D_Lunar_Surface_Reconstruction_ICCVW_2025_paper.html)"></a>
-  <a href="https://clementinegrethen.github.io/publications/3D-Vast-ICCV2025.html"><img src="https://img.shields.io/badge/Project%20Page-Online-blue?style=for-the-badge"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Dataset-StereoLunar-green?style=for-the-badge"></a>
+  <a href="https://openaccess.thecvf.com/content/ICCV2025W/3D-VAST/html/Grethen_Adapting_Stereo_Vision_From_Objects_To_3D_Lunar_Surface_Reconstruction_ICCVW_2025_paper.html">
+    <img src="https://img.shields.io/badge/Paper-PDF-red?style=for-the-badge">
+  </a>
+  <a href="https://clementinegrethen.github.io/publications/3D-Vast-ICCV2025.html">
+    <img src="https://img.shields.io/badge/Project%20Page-Online-blue?style=for-the-badge">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Dataset-StereoLunar-green?style=for-the-badge">
+  </a>
 </p>
 
 ---
+
 
 ## 📋 Table of Contents
 
