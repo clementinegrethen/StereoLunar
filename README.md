@@ -410,13 +410,13 @@ If you find our work to be useful in your research, please consider citing our p
 
 
 ```bibtex
-@inproceedings{grethen2025StereoLunar,
-  title={Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset},
-  author={Grethen, Clémentine and Morin, Géraldine and Gasparini, Simone and Lebreton, Jérémy and Marti, Lucas and Gestido, Manuel Sanchez},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)},
-  year={2025},
-  month={October},
-  note={Accepted at 3D-VAST Workshop}
+@InProceedings{Grethen_2025_ICCV,
+    author    = {Grethen, Cl\'ementine and Gasparini, Simone and Morin, G\'eraldine and Lebreton, J\'er\'emy and Marti, Lucas and Sanchez-Gestido, Manuel},
+    title     = {Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+    month     = {October},
+    year      = {2025},
+    pages     = {3751-3760}
 }
 ```
 
