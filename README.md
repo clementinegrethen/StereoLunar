@@ -102,7 +102,7 @@ cd ../../../../
 There are two options for downloading our StereoLunar fine-tuned MASt3R model:
 
 **Option 1: Automatic download via Hugging Face Hub**
-The model ([StereoLunar]([https://huggingface.co/cgrethen/StereoLunar](https://huggingface.co/cgrethen/MOONSt3R))) will be downloaded automatically when you run the demo.
+The model \href{https://huggingface.co/cgrethen/MOONSt3R}{MOONSt3R} will be downloaded automatically when you run the demo.
 
 **Option 2: Manual download**
 ```bash
