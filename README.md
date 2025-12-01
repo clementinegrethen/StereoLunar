@@ -41,6 +41,7 @@ Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Sur
 
 ## 🚀 News
 **Coming Soon:** New model for 3D Moon reconstruction based on VGGT (CVPR 2025) and StereoLunar dataset!
+Checkpoitn release for mast3r
 
 ---
 
