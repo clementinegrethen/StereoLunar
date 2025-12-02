@@ -22,7 +22,7 @@ Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Sur
 ---
 
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [News](#-news)
 - [Installation](#-installation)
@@ -44,7 +44,7 @@ Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Sur
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.11
