@@ -289,11 +289,13 @@ SUN_SETUPS = [
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{grethen2025lunar,
-  title={...},
-  author={Grethen, Clémentine and ...},
-  journal={...},
-  year={2025}
+@InProceedings{Grethen_2025_ICCV,
+    author    = {Grethen, Cl\'ementine and Gasparini, Simone and Morin, G\'eraldine and Lebreton, J\'er\'emy and Marti, Lucas and Sanchez-Gestido, Manuel},
+    title     = {Adapting Stereo Vision From Objects To 3D Lunar Surface Reconstruction with the StereoLunar Dataset},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+    month     = {October},
+    year      = {2025},
+    pages     = {3751-3760}
 }
 ```
 
