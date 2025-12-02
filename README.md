@@ -424,8 +424,7 @@ If you find our work to be useful in your research, please consider citing our p
 
 ##  Acknowledgements
 
-This codebase builds upon many excellent open-source projects, such as MegaDepth, DUSt3R, CroCo, etc. We thank the respective authors for making their work publicly available.
+This codebase builds upon many open-source projects,MASt3R, VGGT, etc. We thank the respective authors for making their work publicly available.
 
 This work was supported by the **European Space Agency (ESA)** under contract **4000140461/23/NL/GLC/my**.
 
-We gratefully acknowledge the valuable support and collaboration of the **European Space Agency (ESA)** and **Airbus Defence and Space** for this work.
