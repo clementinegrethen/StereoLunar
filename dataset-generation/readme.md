@@ -1,7 +1,7 @@
 # Lunar Surface Dataset Generator
 
 This repository provides scripts to generate synthetic stereo image pairs of the lunar surface using the [SurRender](https://www.airbus.com/en/products-services/space/space-equipment/surrender) rendering engine.
-
+> **⚠️ Note:** The parameter values in these scripts are not the exact configuration used to generate the StereoLunar dataset. Due to computational constraints, the actual dataset was generated across multiple runs and instances. These scripts provide the **trajectory generation framework** adapted for the lunar south pole region. To obtain the exact StereoLunar dataset used in our paper, please download it from [Zenodo](https://zenodo.org/).
 ## Overview
 
 The pipeline consists of three main steps:
