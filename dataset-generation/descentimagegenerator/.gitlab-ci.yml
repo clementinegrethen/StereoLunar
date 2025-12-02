@@ -1,0 +1,14 @@
+image: aforge-frdr.biz.nstd.fr.airbusds.corp/sysmate-docker/base/python:3.3.0-3.8-ubuntu20.04
+stages:
+  - test
+
+variables:
+  PACKAGE_MANAGER_AUTH: $AFORGE_AUTH
+
+test-job:
+  stage: test
+  tags:
+    - base
+  script:
+    - pip install ".[test]"
+    - pytest

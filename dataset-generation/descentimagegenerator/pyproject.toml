@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "descentimagegenerator"
+version = "0.1.0"
+authors = [
+  # I'm not the only author nor the main contributor to DIG
+  # please add yourself if you want your name here =)
+  { name="Nicolas Ollagnier", email="nicolas.ollagnier@airbus.com" },
+  { name="Lucas Marti", email="lucas.marti@airbus.com" },
+]
+description = "Descent Image Generator"
+readme = "README.md"
+license = {text = "Proprietary"}
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = ["landing", "surrender", "descent", "trajectory"]
+dependencies = [
+    "numpy",
+    "dataclasses-json",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "opencv-python",
+    "surrender",
+]
+
+[tool.setuptools.packages.find]
+include = ["descentimagegenerator*"]
+
+[project.urls]
+"Homepage" = "https://gitlab.imagechain.devci.net/computer-vision/descentimagegenerator"
+
+[project.optional-dependencies]
+coloredlogs = ["coloredlogs==15.0.1"]
+progression_bars = ["tqdm==4.65.0"]
+test = ["pytest==8.0.0"]

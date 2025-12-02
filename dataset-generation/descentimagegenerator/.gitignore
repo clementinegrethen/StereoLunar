@@ -1,0 +1,15 @@
+.ipynb_checkpoints/
+build*/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist
+/bin
+/lib
+/share
+/lib64
+/conf
+/data
+/pyvenv.cfg
+/venv
