@@ -14,7 +14,7 @@ Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Sur
   <a href="https://clementinegrethen.github.io/publications/3D-Vast-ICCV2025.html">
     <img src="https://img.shields.io/badge/Project%20Page-Online-blue?style=for-the-badge">
   </a>
-  <a href="#">
+  <a href="https://zenodo.org/records/17514376">
     <img src="https://img.shields.io/badge/Dataset-StereoLunar-green?style=for-the-badge">
   </a>
 </p>
@@ -40,7 +40,7 @@ Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Sur
 ---
 
 ## 🚀 News
-**NEW** : code for dataset generation using surrender in the branch dataset-generation
+**NEW** : Dataset has been released !
 
 **Coming Soon:** New model for 3D Moon reconstruction based on VGGT (CVPR 2025) and StereoLunar dataset!
 
@@ -288,6 +288,8 @@ The data may be updated over time, and additions can be made.
 Below is the **record of changes**:
 
 ### Record of Changes
+- **2025-12-16** — Dataset on Zenodo.  
+
 - **2025-10-15** — Initial release of the dataset documentation.  
 
 
