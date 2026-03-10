@@ -40,6 +40,7 @@ Official implementation of **Adapting Stereo Vision From Objects To 3D Lunar Sur
 ---
 
 ## 🚀 News
+New : adaptation on VGGT 
 **December 2025** — Soon: release of StereoLunar v2, featuring <a href="https://clementinegrethen.github.io/publications/Lunar-G2R">Lunar-G2R–based</a> SVBRDF rendering for improved photometric realism.
 Dataset: <a href="https://zenodo.org/records/17514376">Zenodo</a>
 
