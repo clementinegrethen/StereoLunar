@@ -127,15 +127,36 @@ A folder with sample scenes from our **StereoLunar dataset** (see [🌙 Dataset 
 
 ### Demo Scripts
 
-**Run interactive demo:**
-```python
+**Recommended — direct pair reconstruction (no pose optimization):**
+```bash
+cd mast3r
+python reconstruct_pair.py \
+    ../quick_testing/Nadir_baseline_sample/paire1/im_00594.jpg \
+    ../quick_testing/Nadir_baseline_sample/paire1/im_00595.jpg \
+    --weights checkpoints/StereoLunar.pth
+# -> out/fused.ply (colored point cloud), out/preview.png,
+#    and a cross-view consistency score
+```
+This outputs the network's **raw two-view prediction**: both views are predicted
+directly in the first camera's frame, so what you see is exactly what the model
+produces. This is the output our quantitative evaluation is based on, and the
+one to use when comparing against StereoLunar.
+
+**Interactive Gradio demo:**
+```bash
 python demo.py --weights checkpoints/StereoLunar.pth
 ```
 
-**Run non-interactive demo:**
-```python
-python demo_mast3r_nongradio.py --weights checkpoints/StereoLunar.pth
-```
+> ⚠️ **Do not judge reconstruction quality from the interactive demo.** On top
+> of the network output, the demo re-optimizes depth maps, camera poses and
+> per-image focal lengths from sparse descriptor matches. On high-altitude
+> pairs (e.g. the Nadir samples: ~30 km altitude, ~7 % baseline-to-depth
+> ratio) this refinement is close to degenerate (focal–depth–baseline
+> ambiguity) and can *degrade* the raw reconstruction and distort the
+> displayed camera frusta — even with the correct checkpoint. Also make sure
+> to always pass `--weights checkpoints/StereoLunar.pth`: with the default
+> generic MASt3R weights, descriptor matching fails on lunar imagery and the
+> alignment diverges. Use `reconstruct_pair.py` above instead.
 ## Advanced Usage: 
 ### Feature Matching
 <details>
